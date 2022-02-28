@@ -59,7 +59,8 @@ ex.printStackTrace();        }
 String sql="insert into registration values('%s','%s','%s','%s','%s')";
 sql=String.format(sql,psw,country,state,city,email);
 
-        Connection con = DriverManager.getConnection(connectionUrl);
+        
+Connection con = DriverManager.getConnection(connectionUrl);
         //  Connection con = DriverManager.getConnection(connectionUrl);
                 Statement stmt = con.createStatement();
         int executeUpdate = stmt.executeUpdate(sql);
