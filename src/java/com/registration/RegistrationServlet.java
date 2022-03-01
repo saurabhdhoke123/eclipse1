@@ -64,6 +64,7 @@ Connection con = DriverManager.getConnection(connectionUrl);
         //  Connection con = DriverManager.getConnection(connectionUrl);
                 Statement stmt = con.createStatement();
         int executeUpdate = stmt.executeUpdate(sql);
+        
        // ResultSet executeQuery = stmt.executeQuery(sql);
         System.out.println(" no of queries are involved-> "+executeUpdate);
 
