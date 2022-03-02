@@ -55,7 +55,7 @@ public class RegistrationServlet extends HttpServlet {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
         } catch (ClassNotFoundException ex) {
 ex.printStackTrace();        }
-          String connectionUrl = "jdbc:sqlserver://localhost:1433;databaseName=test;user=sa1;password=goerwin@123;encrypt=true;trustServerCertificate=true;";
+          String connectionUrl = "jdbc:sqlserver://localhost:1433;databaseName=test;user=sa2;password=goerwin@1;encrypt=true;trustServerCertificate=true;";
 String sql="insert into registration values('%s','%s','%s','%s','%s')";
 sql=String.format(sql,psw,country,state,city,email);
 
